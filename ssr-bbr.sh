@@ -25,6 +25,6 @@ eof
 /usr/bin/expect << eof
 spawn ./bbr.sh
 set timeout 1000
-expect "*cancel" {send "y"}
-expect "*y/n*" {send "y"}
+expect "*cancel" {send "y\r"}
+expect "*y/n*" {send "y\r"}
 expect eof
