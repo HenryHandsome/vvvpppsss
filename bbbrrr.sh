@@ -9,5 +9,5 @@ chmod +x bbr.sh
 spawn ./bbr.sh
 set timeout 1000
 expect "*cancel" {send "y\r"}
-expect "*y/n*" {send "y\r"}
+expect "*y/n*" {send "y"}
 expect eof
