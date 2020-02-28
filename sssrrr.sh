@@ -9,4 +9,4 @@ expect "*aes-256-cfb):" {send "2\r"}
 expect "*(Default: origin):" {send "1\r"}
 expect "*Default: plain):" {send "1\r"}
 expect "*cancel" {send "y\r"}
-expect eof
+interact
