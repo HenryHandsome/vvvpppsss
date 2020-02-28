@@ -1,13 +1,7 @@
-#!/bin/sh
-yum -y install expect
-wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh
-chmod +x bbr.sh
+#!/usr/bin/expect
 
-#交互模式
-
-/usr/bin/expect << eof
 spawn ./bbr.sh
-set timeout 1000
+set timeout 300
 expect "*cancel" {send "y\r"}
 expect "*y/n*" {send "y\r"}
 expect eof
