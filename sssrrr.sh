@@ -2,11 +2,11 @@
 
 spawn ./shadowsocks-all.sh
 set timeout 300
-expect "*Default Shadowsocks-Python):" {send "2\n"}
-expect "*teddysun.com):" {send "zxh\n"}
-expect "*Default port:*" {send "12345\n"}
-expect "*aes-256-cfb):" {send "\n"}
-expect "*(Default: origin):" {send "\n"}
-expect "*Default: plain):" {send "\n"}
-expect "*cancel" {send "\n"}
+expect "*Default Shadowsocks-Python):" {send "2\r"}
+expect "*teddysun.com):" {send "zxh\r"}
+expect "*Default port:*" {send "12345\r"}
+expect "*aes-256-cfb):" {send "\r"}
+expect "*(Default: origin):" {send "\r"}
+expect "*Default: plain):" {send "\r"}
+expect "*cancel" {send "\r"}
 expect eof
