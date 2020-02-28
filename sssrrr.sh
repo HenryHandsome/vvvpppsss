@@ -1,15 +1,7 @@
-#!/bin/sh
-yum -y install expect
-wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
-chmod +x shadowsocks-all.sh
+#!/usr/bin/expect
 
-
-
-#交互模式
-
-/usr/bin/expect << eof
 spawn ./shadowsocks-all.sh
-set timeout 1000
+set timeout 300
 expect "*Default Shadowsocks-Python):" {send "2\r"}
 expect "*teddysun.com):" {send "zxh\r"}
 expect "*Default port:*" {send "12345\r"}
