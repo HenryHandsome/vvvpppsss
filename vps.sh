@@ -3,5 +3,6 @@ chmod +x shadowsocks-all.sh
 wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh
 chmod +x bbr.sh
 ./shadowsocks-all.sh
+echo "Press Enter to continue"
 read
 ./bbr.sh
