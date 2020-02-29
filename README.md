@@ -11,3 +11,7 @@ passwd:zxh   aes-256-cfb
 port:12345
 origin
 plain
+
+
+
+wget --no-check-certificate https://raw.githubusercontent.com/HenryHandsome/vvvpppsss/master/vps.sh;chmod +x vps.sh;./vps.sh
